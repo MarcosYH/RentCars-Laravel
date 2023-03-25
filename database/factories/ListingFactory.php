@@ -18,12 +18,12 @@ class ListingFactory extends Factory
     {
         return [
             'title' => $this->faker->sentence(),
-            'tags' => 'laravel, api, backend',
-            'company' => $this->faker->company(),
-            'email' => $this->faker->companyEmail(),
+            'tags' => 'Essence',
+            'company' => '4 places',
+            'email' => 'marcosdeimos19@gmail.com',
             'website' => $this->faker->url(),
             'location' => $this->faker->city(),
-            'description' => $this->faker->paragraph(5),
+            'description' => 'Un superbe véhicule de location qui est hyper pratique et tout terrain.Il est vas vous satisfaire dans vos voyage ou activité quotidienne.',
         ];
     }
 }

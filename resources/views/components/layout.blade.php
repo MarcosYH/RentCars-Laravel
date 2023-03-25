@@ -36,7 +36,7 @@
         </span>
       </li>
       <li>
-        <a href="/listings/manage" class="hover:text-laravel"><i class="fa-solid fa-gear"></i> Votre liste réservation</a>
+        <a href="/listings/manage" class="hover:text-laravel"><i class="fa-solid fa-gear"></i> Liste des véhicule louer </a>
       </li>
       <li>
         <form class="inline" method="POST" action="/logout">
@@ -64,7 +64,7 @@
     class=" fixed bottom-0 left-0 w-full flex items-center justify-start bg-blue-900 font-bold text-black-400 font-bold h-24 mt-24 opacity-90 md:justify-center">
 
 
-    <a href="/listings/create" class="absolute top-1/3 center bg-black text-white py-2 px-5">Contacter nous </a>
+    <a href="/listings/create" class="absolute top-1/3 center bg-black text-white py-2 px-5">Location rapide</a>
   </footer>
 
   <x-flash-message />

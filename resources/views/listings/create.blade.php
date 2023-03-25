@@ -2,13 +2,13 @@
   <x-card class="p-10 max-w-lg mx-auto mt-24">
     <header class="text-center">
       <h2 class="text-2xl font-bold uppercase mb-1">Information</h2>
-      <p class="mb-4">Envoyer nous les information du véhicule que vous rechercher</p>
+      <p class="mb-4">Envoyer nous les information du véhicule</p>
     </header>
 
     <form method="POST" action="/listings" enctype="multipart/form-data">
       @csrf
       <div class="mb-6">
-        <label for="company" class="inline-block text-lg mb-2">Nom du véhicule</label>
+        <label for="company" class="inline-block text-lg mb-2">Votre Nom</label>
         <input type="text" class="border border-gray-200 rounded p-2 w-full" name="company"
           value="{{old('company')}}" />
 
@@ -18,9 +18,9 @@
       </div>
 
       <div class="mb-6">
-        <label for="title" class="inline-block text-lg mb-2"> Nombre de place</label>
+        <label for="title" class="inline-block text-lg mb-2"> Nom du véhicule</label>
         <input type="text" class="border border-gray-200 rounded p-2 w-full" name="title"
-          placeholder="Example: 4 places" value="{{old('title')}}" />
+          placeholder="Example: Lexus 2023" value="{{old('title')}}" />
 
         @error('title')
         <p class="text-red-500 text-xs mt-1">{{$message}}</p>
@@ -50,7 +50,7 @@
 
       <div class="mb-6">
         <label for="website" class="inline-block text-lg mb-2">
-          Site web de modèle du véhicule
+         Nombre de place
         </label>
         <input type="text" class="border border-gray-200 rounded p-2 w-full" name="website"
           value="{{old('website')}}" />
